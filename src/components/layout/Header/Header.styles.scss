@@ -1,0 +1,32 @@
+@import '../../../styles/_mixins';
+@import '../../../styles/_variables';
+
+header.header {
+  height: 10vh;
+  padding: 0 $spacing-xxxl;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background-color: $light-color;
+  box-sizing: border-box;
+  @include flexbox(space-between, center);
+  @include box-shadow(0, 10px, 42px, -3px, rgba(0, 0, 0, 0.1));
+
+  @include respond-to(extra-large) {
+    padding-left: $spacing-xxxl;
+    padding-right: $spacing-xxxl;
+  }
+
+  @include respond-to(large) {
+    padding-left: $spacing-xxl;
+    padding-right: $spacing-xxl;
+  }
+  @include respond-to(medium) {
+    padding-left: $spacing-lg;
+    padding-right: $spacing-lg;
+  }
+
+  h1.header-title {
+    font-weight: 400;
+  }
+}

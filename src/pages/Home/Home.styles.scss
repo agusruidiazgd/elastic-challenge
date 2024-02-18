@@ -1,0 +1,30 @@
+@import '../../styles/_mixins';
+@import '../../styles/_variables';
+
+.container {
+  padding: 0 $spacing-xxxl;
+  padding-top: calc(10vh + 60px);
+  background-color: $bg-color;
+  min-height: calc(100vh - 60px);
+
+  @include respond-to(extra-large) {
+    padding-left: $spacing-xxxl;
+    padding-right: $spacing-xxxl;
+  }
+
+  @include respond-to(large) {
+    padding-left: $spacing-xxl;
+    padding-right: $spacing-xxl;
+  }
+  @include respond-to(medium) {
+    padding-left: $spacing-lg;
+    padding-right: $spacing-lg;
+  }
+}
+
+.loading-container {
+  padding-top: calc(10vh + 60px);
+  background-color: $bg-color;
+  height: calc(100vh - 60px);
+  @include flexbox(center, center);
+}

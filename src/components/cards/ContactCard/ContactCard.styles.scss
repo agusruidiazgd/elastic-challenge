@@ -1,0 +1,106 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.contact-card {
+  flex-direction: column;
+  @include flexbox(space-between, flex-start);
+  @include box-shadow(0, 10px, 42px, -3px, rgba(0, 0, 0, 0.1));
+  background-color: #fff;
+  padding: 16px;
+  box-sizing: border-box;
+  height: 330px;
+
+  &:hover {
+    .description-container {
+      height: auto;
+    }
+    .contact-img {
+      height: 160px;
+    }
+    .img-container {
+      height: 160px;
+    }
+    .title-container {
+      padding-top: 0px;
+    }
+    .main {
+      height: 100px;
+    }
+  }
+}
+
+.img-container {
+  height: 220px;
+  width: 100%;
+  transition: height 0.1s ease;
+
+  .contact-card:hover & {
+    height: 160px;
+  }
+}
+
+.contact-img {
+  height: 220px;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: height 0.1s ease-in-out;
+
+  .contact-card:hover & {
+    height: 160px;
+  }
+}
+
+.img-contact {
+  position: absolute;
+  width: 100%;
+  transition: height 0.1s ease-in-out;
+}
+.img-logo {
+  width: 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 4px;
+  border-radius: 50%;
+}
+
+p.card-text {
+  font-size: 11px;
+}
+
+.phone-info {
+  display: flex;
+}
+
+.main {
+  overflow: hidden;
+  height: 50px;
+  transition: height 0.1s ease-in-out;
+}
+
+.description-container {
+  padding-top: 20px;
+}
+
+.title-container {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+
+  h4 {
+    font-weight: 400;
+  }
+}
+
+.contact-info {
+  @include flexbox(flex-start, center);
+
+  p:first-child {
+    margin-right: 4px;
+  }
+  p:last-child {
+    margin-left: 4px;
+  }
+}
