@@ -1,6 +1,6 @@
 # Elastic Challenge
 
-## Description
+### Description
 
 The goal of this project is to create a simple web application that fetches contacts from an API and allows users to filter them based on a search input. 
 This app have the following features:
