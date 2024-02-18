@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Elastic Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+The goal of this project is to create a simple web application that fetches contacts from an API and allows users to filter them based on a search input. 
+This app have the following features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch contacts data from a provided API.
+- Display the list of contacts.
+- Allow users to filter contacts by name using an input field.
+- Use RxJS to manage the filtering logic.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React.js: A JavaScript library for building user interfaces.
+- TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
+- Vite: A fast, modern build tool for frontend development.
+- SCSS: A CSS preprocessor that adds power and elegance to the basic CSS syntax.
+- RxJS: A library for reactive programming using Observables to make it easier to compose asynchronous or callback-based code.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Setup
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Follow these steps to set up the project locally:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+`git clone https://github.com/agusruidiazgd/elastic-challenge.git`
+
+2. Navigate to the project directory:
+`cd elastice-challenge`
+
+3. Install dependencies using Yarn:
+`yarn install`
+
+4. Start the development server:
+`yarn dev`
+
+5. Open your browser and visit [http://localhost:5173](http://localhost:5173/) to view the application.
+
