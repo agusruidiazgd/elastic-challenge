@@ -1,0 +1,48 @@
+@import './_variables';
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin flexbox($justify: flex-start, $align: flex-start) {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin box-shadow(
+  $x: 0,
+  $y: 0,
+  $blur: 4px,
+  $spread: 0,
+  $color: rgba(0, 0, 0, 0.2)
+) {
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin transition($properties, $duration: 0.3s, $timing-function: ease) {
+  transition: $properties $duration $timing-function;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == extra-large {
+    @media (max-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}
