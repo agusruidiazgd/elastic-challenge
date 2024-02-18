@@ -1,4 +1,3 @@
-import React from 'react';
 import './ContactCard.styles.scss';
 import { ContactCardProps } from './ContactCard.types';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import './WrapperGrid.styles.scss';
 import { WrapperGridProps } from './WrapperGrid.types';
 
